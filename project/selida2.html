@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/selida2.css">
+<title>INSTRUMENTS</title>
+</head>
+<body>
+<header><h2>INSTRUMENTS</h2></header>
+
+<section>
+
+  <nav>
+    <ul>
+    <h3>📜 Menu</h3>
+    <li><a href="index.html"><button>HOME</button></a></li>
+    <li><a href="selida2.html"><button>ISTRUMENTS</button></a></li>
+    <li><a href="selida3.html"><button>ABOUT</button></a></li>
+    <li><a href="selida4.html"><button>CONTACT</button></a></li>
+    <br>
+    <li class="desk"><img width="160"  height="350" src="./myImages/klidisoledited2.png" ></li>
+    </ul>
+    <div class="nav-image mobile">
+     <img width="160"  height="350" src="./myImages/klidisoledited2.png" >
+    </div>
+  </nav>
+
+  
+  <article>
+    <div class="slideshow-container">
+        <div class="mySlides" style="background-image: url('./myImages/museum.aiololira.png.png');">
+          <div class="slide-text">
+            <details><summary><li>AIOLOLYRA</li></summary>
+            <h3>The Aiolólyra was forged by Boreas, the god of the northern wind, when he fell in love with a priestess of silence. Longing to speak to her without words, he carved five strings of air into golden wood from the last tree of ancient Hyperborea. When played, the Aiolólyra produces no ordinary sound — each note rides the wind, carrying emotions, memories, or even visions. It is used in ceremonies to commune with the past or reach lost souls.</h3>
+            </details>
+          </div>
+        </div>
+
+        <div class="mySlides" style="background-image: url('./myImages/museum.timpano.jpg.png');">
+          <div class="slide-text">
+            <details><summary><li>TYMBAN</li></summary>
+            <h3>The Tymban was forged within the heart of an active volcano by a forgotten tribe that worshiped fire as both creation and destruction. Its skin is made from the hide of dragons lost in the First War of the Gods. Each strike resonates not just through the air, but through the soul of the listener. It is used to rekindle courage in battle, shatter enchanted silence, or summon fiery spirits from beyond.</h3>
+            </details>
+          </div>
+        </div>
+
+        <div class="mySlides" style="background-image: url('./myImages/museum.salpigga.jpg.png');">
+          <div class="slide-text">
+            <details><summary><li>TIELTHUCAN</li></summary>
+            <h3>Legend says the Tielthućan washed ashore on a desolate cliff, sculpted by Poseidon himself in mourning for a beloved dolphin. Crafted from shells of the Sea of Lethe and coral that grows only when whispered to, this conch lets the player summon sea creatures, control tides, or glimpse memories long lost to the ocean’s depths.</h3>
+            </details>
+          </div>
+        </div>
+
+        <div class="mySlides" style="background-image: url('./myImages/museum.arpa.jpg.png');">
+          <div class="slide-text">
+           <details><summary><li>MOONLIT HARP</li></summary>
+           <h3>The Moonlit Harp was formed from a shard of the moon that fell to Earth, found by a lonely poet who carved it with his bare hands and filled it with silver dust and dream-tears. It can only be heard under a clear moonlight. Its melodies evoke vivid dreams, open portals to other realms, and have healed hearts time itself could not mend.</h3>
+           </details>
+          </div>
+        </div>
+
+        <div class="mySlides" style="background-image: url('./myImages/KALIMBA.png');">
+          <div class="slide-text">
+            <details>
+            <summary><li>TIME'S KALIMBA</li></summary>
+            <h3>Time’s Kalimba is the most mysterious of them all. It was crafted by a shadowy mechanic who stole sand from the Hourglass of Fate. Its body is wood from the first Temple of Time, and its metal tongues are forged from condensed silver centuries. When played, it can slow time, reveal possible futures, or correct a single past mistake — though always at a price the player does not yet know they care about.</h3>
+            </details>
+          </div>
+        </div>  
+        <a class="prev" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
+      </div>
+    </div>
+  </article>
+
+
+</section>
+
+<footer>
+  <h5>Πρόκειται για εργασία στo πλαίσιο εξέτασης μαθήματος</h5>
+  <h6>Τμημα Πολιτισμικής Τεχνολογίας και Επικοινωνίας, Παν. Αιγαίου&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Μυτιλήνη, 2025</h6>
+</footer>
+
+
+ <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      const slides = document.getElementsByClassName("mySlides");
+      if (slides.length === 0) return;
+      if (n > slides.length) slideIndex = 1;
+      if (n < 1) slideIndex = slides.length;
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    setInterval(() => {
+      plusSlides(1);
+    }, 10000);
+  </script>
+</body>
+</html>
+

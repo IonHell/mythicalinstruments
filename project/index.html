@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/telik.css">
+<title>MYTHICAL INSTRUMENTS</title>
+</head>
+<body>
+<header><h2>The Museum of Mythical Instruments- HOME</h2></header>
+<section>
+
+  <nav>
+   <ul>
+   <h3>📜 Menu</h3>
+   <li><a href="index.html"><button>HOME</button></a></li>
+   <li><a href="selida2.html"><button>ISTRUMENTS</button></a></li>
+   <li><a href="selida3.html"><button>ABOUT</button></a></li>
+   <li><a href="selida4.html"><button>CONTACT</button></a></li>
+   <br>
+   <li class="desk"><img width="160"  height="350" src="./myImages/klidisoledited2.png" ></li>
+   </ul>
+   <div class="nav-image mobile">
+    <img width="160"  height="350" src="./myImages/klidisoledited2.png" >
+   </div>
+  </nav>
+  
+  <article>
+    <button id="toggleButton" onclick="playSound()">Click to Play Sound</button>
+    <audio id="harp.mp3" src="myAudio/harp.mp3" ></audio>
+
+   <div class= ><img height="350" src="./myImages/museum.oles.png.png"></div>
+   <h2>Welcome to the enchanting world of fantasy and music</h2>
+   <div class="center-text">
+   <p><strong>The Museum of Mythical Instruments is a digital space dedicated to the presentation of five unique, fictional musical instruments that do not belong to historical reality, but to an alternative world of magic and myth. Each instrument showcased here has been created with the help of Artificial Intelligence, both in its visual representation and in its written description.</strong></p></div>
+   <div class="center-text">
+   <p><strong>The Mythical Instruments Museum is a fictional digital space dedicated to art, imagination, and sound. Virtually housed in a realm suspended between time and fantasy, the museum was created to showcase legendary musical instruments that never truly existed — and yet, visitors feel as if they might have.
+   Each exhibit hall is designed to offer an immersive experience of listening, dreaming, and storytelling, inviting the visitor to engage with multimedia and the power of creativity. This museum is a tribute to artistic vision, myth-making, and the role of Artificial Intelligence as a creative partner.</strong></p></div>
+   <div class="center-text">
+   <p><strong>📍  Discover, Explore, Be Inspired.</strong></p></div>
+  
+  </article>
+
+</section>
+
+<footer>
+ <h5>Πρόκειται για εργασία στo πλαίσιο εξέτασης μαθήματος</h5>
+ <h6>Τμημα Πολιτισμικής Τεχνολογίας και Επικοινωνίας, Παν. Αιγαίου&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Μυτιλήνη, 2025</h6>
+</footer>
+
+<script>
+    function playSound() {
+      const audio = document.getElementById("harp.mp3");
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+        audio.currentTime = 0; // optional: reset to beginning
+      }
+    }
+    
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  margin-bottom: 0;
+  background-color: #111;
+}
+
+header {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  background-color: gray;
+  border: 10px solid black;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+nav {
+  float: left;
+  width: 10%;
+  color: white;
+  background: #222;
+  padding: 20px;
+}
+
+section{
+  height: 100%;
+  background-color: #222;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 90%;
+  height: 720px;
+  background-color: #f1f1f1;
+  background: url(../myImages/bakgr.png);
+  background-size: cover;
+  text-align: center;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #111;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 0%;
+  height: fit-content;
+  
+}
+
+.klidi{
+  display: table;
+  float: right;
+}
+.nav-image {
+  margin-top: 10px;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
+button:hover{
+    background-color: #777;
+  }
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  .desktop {
+    display: none; 
+  }
+
+  .mobile {
+    display: block;
+    position: absolute;
+    top: 25%;
+    right: 10px;
+  }
+  .desk{
+    display: none;
+  }
+
+  .mobile img {
+    width: 80%; 
+    height: auto;
+  }
+}
